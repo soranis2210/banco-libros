@@ -1,0 +1,228 @@
+/* ====== RESET GENERAL ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* ====== CONTENEDORES ====== */
+.container {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* ====== FORMULARIOS ====== */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+form input,
+form select {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+}
+
+form button {
+  margin-top: 1.5rem;
+  padding: 0.9rem;
+  border: none;
+  background-color: #7158e2;
+  color: white;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #5a44c5;
+}
+
+/* ====== ÍCONOS E IMÁGENES ====== */
+.icono {
+  width: 40px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.img-mini {
+  width: 60px;
+  border-radius: 8px;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
+.logo {
+  width: 100px;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+/* ====== BOTONES DE INICIO ====== */
+.botones-inicio {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.btn-inicio {
+  display: inline-block;
+  background: #222;
+  color: white;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-inicio:hover {
+  background: #444;
+}
+
+/* ====== DASHBOARD ====== */
+.dashboard {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  max-width: 1000px;
+  width: 100%;
+}
+
+.dashboard-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.dashboard-menu a {
+  background-color: #f2f4fa;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: background 0.3s;
+}
+
+.dashboard-menu a img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 0.5rem;
+}
+
+.dashboard-menu a:hover {
+  background-color: #e0e7fa;
+}
+
+/* ====== LIBROS DESTACADOS ====== */
+.libros-destacados {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.libros-destacados a {
+  text-align: center;
+  background-color: #eef2ff;
+  border-radius: 10px;
+  padding: 1rem;
+  text-decoration: none;
+  color: #333;
+}
+
+.libros-destacados img {
+  width: 100%;
+  max-height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+/* ====== LISTA DE PRÉSTAMOS ====== */
+.lista-prestamos {
+  list-style: none;
+  margin-top: 1.5rem;
+}
+
+.lista-prestamos li {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+/* ====== MENSAJE DE CONFIRMACIÓN ====== */
+.mensaje-exito {
+  text-align: center;
+  padding: 2rem;
+}
+
+.mensaje-exito img {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+.mensaje-exito h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ====== BOTÓN VOLVER ====== */
+.btn-volver {
+  display: inline-block;
+  margin-top: 2rem;
+  color: #555;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* ====== MEDIA QUERY BÁSICO ====== */
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  .dashboard-menu {
+    grid-template-columns: 1fr;
+  }
+
+  .libros-destacados {
+    grid-template-columns: 1fr;
+  }
+}
